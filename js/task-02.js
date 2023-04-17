@@ -1,3 +1,5 @@
+'use strict';
+
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -6,3 +8,18 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const ingredientsList = document.querySelector('#ingredients');
+
+const elements = ingredients.map((ingredient) =>{
+  const element = document.createElement('li');
+  element.textContent = ingredient
+  element.classList.add('ingredient');
+  return element;
+})
+
+ingredientsList.append(...elements);
+
+
+
+
