@@ -24,4 +24,4 @@ const elements = images.map(({url, alt}) => {
 
 galleryList.insertAdjacentHTML('beforeend', elements.join(''))
 
-galleryList.style.display = 'flex';
+galleryList.classList.add('gallery-pretty')
